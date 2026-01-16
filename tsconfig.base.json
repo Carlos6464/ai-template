@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ai-template/prisma": ["libs/prisma/src/index.ts"],
+      "@ai-template/domain": ["libs/core/domain/src/index.ts"],
+      "@ai-template/application": ["libs/core/application/src/index.ts"],
+      "@ai-template/infrastructure": ["libs/core/infrastructure/src/index.ts"],
+      "@ai-template/auth": ["libs/auth/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
